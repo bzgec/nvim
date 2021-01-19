@@ -9,6 +9,9 @@ Also check his [blog post](https://www.chrisatmachine.com/Neovim/22-vscodium-neo
 
 - [VSCodium repo](https://github.com/VSCodium/vscodium)
 
+You need to change `init.vim` to point to your `vscode/settings.json` from this repository.
+So you need to change this line `source C:\.config\nvim\vscode\settings.json`. 
+
 Ok so you need to change this two files in you VSCodium:
 - [keybindings.json](./utils/vscodium_config/keybindings.json): press `CTRL+SHIFT+P` and type 
   `Open Keyboard Shortcuts (JSON)` and paste keybindings
