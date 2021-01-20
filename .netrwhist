@@ -1,0 +1,11 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =9
+let g:netrw_dirhist_9='/home/bzgec/Projects/homeAutomation/myServer'
+let g:netrw_dirhist_8='/home/bzgec/Projects/homeAutomation/myServer/backend'
+let g:netrw_dirhist_7='/home/bzgec/Projects/homeAutomation/myServer'
+let g:netrw_dirhist_6='/home/bzgec/.config/nvim'
+let g:netrw_dirhist_5='/home/bzgec/Projects/homeAutomation/myServer/backend'
+let g:netrw_dirhist_4='/home/bzgec/Projects/homeAutomation/myServer'
+let g:netrw_dirhist_3='/home/bzgec/.config/nvim'
+let g:netrw_dirhist_2='/home/bzgec/.config'
+let g:netrw_dirhist_1='/home/bzgec/.config/nvim'

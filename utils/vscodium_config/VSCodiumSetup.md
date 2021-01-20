@@ -16,3 +16,4 @@ Note that this should be already set by `settings.json`:
 - Markdown Preview Markdown Preview Github Styling (*Markdown* previews)
 - Render Line Endings (show line endings `LF`/`CRLF`)
 
+### Not yet implemented in VSCodium or something else

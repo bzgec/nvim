@@ -23,5 +23,6 @@ Ok so you need to change this two files in you VSCodium:
 You need to install this extensions:
 - `Neo Vim`
 - `Which Key`
+- `vscode-viml-syntax` (this is not neccessary but helps with editing `.vim` files) 
 
 Other setup which is not so related to Neovim but more to VSCodium - [link](.//utils/vscodium_config/VSCodiumSetup.md).
