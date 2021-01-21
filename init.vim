@@ -1,7 +1,4 @@
 
-" Use `jj` instead of escape to exit insert mode
-inoremap jj <ESC>
-set timeoutlen=250
 
 if exists('g:vscode')
     " VSCode/VSCodium extension
@@ -34,6 +31,10 @@ else
     " Custom per project `.vimrc`
     set exrc
     
+    " Use `jj` instead of escape to exit insert mode
+    inoremap jj <ESC>
+    set timeoutlen=250
+
     " After you are done searching stop highlighting (no need to type `:noh` after you are done
     "set nohlsearch
     set hlsearch

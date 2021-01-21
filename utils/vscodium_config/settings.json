@@ -5,11 +5,12 @@
     "vscode-neovim.neovimInitVimPaths.win32": "C:\\.config\\nvim\\init.vim",
     "editor.rulers": [100],
     "files.eol": "\n",
-    "editor.tabSize": 3,
+    "editor.tabSize": 4,
     "editor.trimAutoWhitespace": true,
     "editor.useTabStops": true,
     "editor.renderWhitespace": "all", 
     "editor.renderControlCharacters": true,
+    "editor.lineNumbers": "relative",
     "whichkey.sortOrder": "alphabetically",
     "whichkey.delay": 0,
     "whichkey.bindings": [

@@ -6,6 +6,12 @@
       "when": "neovim.mode != 'insert' && !inputFocus"
     },
     {
+      "command": "vscode-neovim.compositeEscape1",
+      "key": "j",
+      "when": "neovim.mode == insert && editorTextFocus",
+      "args": "j"
+    },
+    {
       "key": "shift+ctrl+e",
       "command": "actions.findWithSelection"
     },
