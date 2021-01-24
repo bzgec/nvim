@@ -11,6 +11,7 @@
     "editor.renderWhitespace": "all", 
     "editor.renderControlCharacters": true,
     "editor.lineNumbers": "relative",
+    "keyboard.dispatch": "keyCode",
     "whichkey.sortOrder": "alphabetically",
     "whichkey.delay": 0,
     "whichkey.bindings": [
@@ -1011,7 +1012,7 @@
       "python.condaPath": "$HOME/.miniconda/bin/conda",
       "python.formatting.provider": "black",
       "python.insidersChannel": "off",
-      "terminal.integrated.shell.linux": "/bin/zsh",
+      "terminal.integrated.shell.linux": "/bin/bash",
       "terminal.external.linuxExec": "/usr/bin/alacritty",
       "code-runner.executorMap": {
         "python": "$pythonPath $fileName",
