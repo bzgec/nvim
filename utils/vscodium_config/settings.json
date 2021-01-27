@@ -9,10 +9,12 @@
     "editor.tabSize": 4,
     "editor.trimAutoWhitespace": true,
     "editor.useTabStops": true,
-    "editor.renderWhitespace": "all", 
+    "editor.renderWhitespace": "all",
     "editor.renderControlCharacters": true,
     "editor.lineNumbers": "relative",
     "keyboard.dispatch": "keyCode",
+    "files.trimTrailingWhitespace": true,
+    "files.insertFinalNewline": true,
     "whichkey.sortOrder": "alphabetically",
     "whichkey.delay": 0,
     "whichkey.bindings": [
@@ -1001,13 +1003,13 @@
         "**/.factorypath": true
       },
       "terminal.external.osxExec": "iTerm.app",
-      "editor.minimap.enabled": false,
+      "editor.minimap.enabled": true,
       "workbench.activityBar.visible": true,
       "leetcode.workspaceFolder": "/Users/chris/Repos/leetcode",
       "leetcode.defaultLanguage": "javascript",
       "leetcode.hint.configWebviewMarkdown": false,
       "leetcode.hint.commentDescription": false,
-      "window.zoomLevel": 0,
+      "window.zoomLevel": -1,
       "window.menuBarVisibility": "toggle",
       "python.dataScience.alwaysTrustNotebooks": true,
       "python.condaPath": "$HOME/.miniconda/bin/conda",
@@ -1033,11 +1035,11 @@
                 "foreground": "#61afef"
               }
             },
-    
+
             {
               "scope": [
                 "variable.other.constant.object.js",
-    
+
                 "punctuation.section.embedded.begin.jsx",
                 "punctuation.section.embedded.end.jsx"
               ],
@@ -1091,7 +1093,7 @@
           ]
         }
       },
-    
+
       "workbench.colorCustomizations": {
         "[Default Dark+]": {
           "statusBar.background": "#2E2E2E",
@@ -1136,3 +1138,4 @@
       "python.showStartPage": false,
       "editor.snippetSuggestions": "bottom"
 }
+
