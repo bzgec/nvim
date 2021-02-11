@@ -1,4 +1,6 @@
 {
+    ////////////////////////////////////////////////////////////////////////////////////////////////
+    // My custom (not from ChristianChiarulli)
     "vscode-neovim.neovimExecutablePaths.linux": "/usr/local/bin/nvim",
     "vscode-neovim.neovimExecutablePaths.win32": "C:\\Neovim\\bin\\nvim.exe",
     "vscode-neovim.neovimInitVimPaths.linux": "$HOME/.config/nvim/init.vim",
@@ -15,6 +17,8 @@
     "keyboard.dispatch": "keyCode",
     "files.trimTrailingWhitespace": true,
     "files.insertFinalNewline": true,
+    "workbench.colorTheme": "Solarized Light",
+    ////////////////////////////////////////////////////////////////////////////////////////////////
     "whichkey.sortOrder": "alphabetically",
     "whichkey.delay": 0,
     "whichkey.bindings": [
@@ -1138,4 +1142,3 @@
       "python.showStartPage": false,
       "editor.snippetSuggestions": "bottom"
 }
-

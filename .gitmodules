@@ -1,0 +1,3 @@
+[submodule "ChristianChiarulli/nvim"]
+	path = ChristianChiarulli/nvim
+	url = git@github.com:ChristianChiarulli/nvim.git
