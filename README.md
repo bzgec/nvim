@@ -2,6 +2,23 @@
 I am using [vim-plug](https://github.com/junegunn/vim-plug) - A minimalist Vim plugin manager.
 Check on the link for installation.
 
+This repo should be put in `~/.config` directory (for both Windows and Linux)
+
+### Windows specific
+- Download latest [NeoVim](https://github.com/neovim/neovim/releases) and put it in root of `C`
+  drive (like this `C:\Neovim\bin`)
+- On Windows run this command to link nvim configuration to a folder where it is expected on
+  Windows (with Git Bash):
+  `ln -s $XDG_CONFIG_HOME/nvim ~/AppData/Local/nvim`
+- Install [Vim-plug](https://github.com/junegunn/vim-plug#windows-powershell-1) with PowerShell:
+```
+iwr -useb https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim |`
+    ni "$(@($env:XDG_DATA_HOME, $env:LOCALAPPDATA)[$null -eq $env:XDG_DATA_HOME])/nvim-data/site/autoload/plug.vim" -Force
+```
+- Now run `C:\Neovim\bin\nvim-qt.exe` few times so that all plugins are installed and no error is
+  thrown (probably 2 times).
+
+
 ## VSCode / VSCodium
 To make VSCodium behave like Neovim I copied stuff from [this repo](https://github.com/ChristianChiarulli/nvim).
 In [this video](https://youtu.be/g4dXZ0RQWdw) author of repo explains his setup.
@@ -28,7 +45,7 @@ You need to install this extensions:
 - `Which Key`
 - `vscode-viml-syntax` (this is not necessary but helps with editing `.vim` files)
 
-Other setup which is not so related to Neovim but more to VSCodium - [link](.//utils/vscodium_config/VSCodiumSetup.md).
+Other setup which is not so related to Neovim but more to VSCodium - [link](./utils/vscodium_config/VSCodiumSetup.md).
 
 ### Shortcuts
 - `CTRL + h/j/k/l` - move between open windows, explorer, terminal...
