@@ -18,6 +18,11 @@ iwr -useb https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim |`
 - Now run `C:\Neovim\bin\nvim-qt.exe` few times so that all plugins are installed and no error is
   thrown (probably 2 times).
 
+#### Use Neovim as `Git Bash` editor
+- Add `nvim` to path - open `cmd` as administrator and execute:
+  `setx /M path "%path%;C:\Neovim\bin\\"`
+- Set `nvim` as git editor - open `Git Bash` and execute: `git config --global core.editor nvim-qt`
+
 
 ## VSCode / VSCodium
 To make VSCodium behave like Neovim I copied stuff from [this repo](https://github.com/ChristianChiarulli/nvim).
