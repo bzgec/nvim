@@ -10,6 +10,8 @@ This repo should be put in `~/.config` directory (for both Windows and Linux)
 - On Windows run this command to link nvim configuration to a folder where it is expected on
   Windows (with Git Bash):
   `ln -s $XDG_CONFIG_HOME/nvim ~/AppData/Local/nvim`
+  If this doesn't work try running `cmd` as admin and run:
+  `mklink /D %HOMEDRIVE%%HOMEPATH%\AppData\Local\nvim %HOMEDRIVE%%HOMEPATH%\.config\nvim`
 - Install [Vim-plug](https://github.com/junegunn/vim-plug#windows-powershell-1) with PowerShell:
 ```
 iwr -useb https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim |`
