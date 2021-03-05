@@ -1,4 +1,5 @@
 " gruvbox setup
 colorscheme gruvbox
+""my-select-theme-start
 set bg=dark
-"set bg=light
+""my-select-theme-end
