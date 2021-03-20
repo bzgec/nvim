@@ -3,13 +3,14 @@
 let mapleader = " "
 nnoremap <Space> <Nop>
 
-vnoremap <C-c> "+y
-
 if exists('g:vscode')
 
 else
     " Use `jj` instead of ESC to exit insert mode
     inoremap jj <ESC>
+
+    " Copy to system clipboard
+    vnoremap <C-c> "+y
 
     " Alternate way to save
     nnoremap <silent> <C-s> :w<CR>

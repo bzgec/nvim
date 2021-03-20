@@ -2,10 +2,17 @@
     ////////////////////////////////////////////////////////////////////////////////////////////////
     // My custom (not from ChristianChiarulli)
     {
+      // Set jj as ESC shortcut
       "command": "vscode-neovim.compositeEscape1",
       "key": "j",
       "when": "neovim.mode == insert && editorTextFocus",
       "args": "j"
+    },
+    {
+      // Disable CTRL+C as ESC
+      "key": "ctrl+c",
+      "command": "-vscode-neovim.escape",
+      "when": "editorTextFocus && neovim.init"
     },
     ////////////////////////////////////////////////////////////////////////////////////////////////
     {

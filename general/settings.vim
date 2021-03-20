@@ -15,6 +15,8 @@ set shiftwidth=4
 set expandtab
 set smartindent
 
+set clipboard=unnamedplus
+
 " Don't brake a column
 set nowrap
 
