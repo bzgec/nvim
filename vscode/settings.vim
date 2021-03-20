@@ -69,6 +69,21 @@ function! s:openWhichKeyInVisualMode()
     endif
 endfunction
 
+function! s:openWhichKeyInVisualMode()
+    normal! gv
+    let visualmode = visualmode()
+    if visualmode == "V"
+        let startLine = line("v")
+        let endLine = line(".")
+        call VSCodeNotifyRange("whichkey.show", startLine, endLine, 1)
+    else
+        let startPos = getpos("v")
+        let endPos = getpos(".")
+        call VSCodeNotifyRangePos("whichkey.show", startPos[1], endPos[1], startPos[2], endPos[2], 1)
+    endif
+endfunction
+
+
 
 command! -complete=file -nargs=? Split call <SID>split('h', <q-args>)
 command! -complete=file -nargs=? Vsplit call <SID>split('v', <q-args>)
