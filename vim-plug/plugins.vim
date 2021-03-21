@@ -34,6 +34,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
     Plug 'ThePrimeagen/vim-be-good', {'do': './install.sh'}
     Plug 'mbbill/undotree'
+    Plug 'lambdalisue/suda.vim'
   endif
 
 " Initialize plugin system

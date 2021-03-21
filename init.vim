@@ -22,5 +22,6 @@ else
   source $HOME/.config/nvim/plug-config/highlightyank.vim
   source $HOME/.config/nvim/plug-config/telescope.vim
   source $HOME/.config/nvim/plug-config/undotree.vim
+  source $HOME/.config/nvim/plug-config/suda.vim
 endif
 
