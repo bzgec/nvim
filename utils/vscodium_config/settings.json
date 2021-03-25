@@ -17,7 +17,9 @@
     "keyboard.dispatch": "keyCode",
     "files.trimTrailingWhitespace": true,
     "files.insertFinalNewline": true,
+    //my-select-theme-start
     "workbench.colorTheme": "Solarized Light",
+    //my-select-theme-end
     ////////////////////////////////////////////////////////////////////////////////////////////////
     "whichkey.sortOrder": "alphabetically",
     "whichkey.delay": 0,
