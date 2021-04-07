@@ -17,8 +17,7 @@ This repo should be put in `~/.config` directory (for both Windows and Linux)
 iwr -useb https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim |`
     ni "$(@($env:XDG_DATA_HOME, $env:LOCALAPPDATA)[$null -eq $env:XDG_DATA_HOME])/nvim-data/site/autoload/plug.vim" -Force
 ```
-- Now run `C:\Neovim\bin\nvim-qt.exe` few times so that all plugins are installed and no error is
-  thrown (probably 2 times).
+- Now run `C:\Neovim\bin\nvim-qt.exe`. If window goes black, just wait it is installing...
 
 #### Use Neovim as `Git Bash` editor
 - Add `nvim` to path - open `cmd` as administrator and execute:
