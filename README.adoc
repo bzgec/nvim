@@ -1,0 +1,112 @@
+= My neovim/vim setup
+:toc:
+
+I am using https://github.com/junegunn/vim-plug[vim-plug] - A minimalist Vim plugin manager.
+Check on the link for installation.
+
+This repo should be put in `~/.config` directory (for both Windows and Linux)
+
+
+== Windows specific
+
+* Download latest https://github.com/neovim/neovim/releases[NeoVim] and put it in root of `C`
+drive (like this `C:\Neovim\bin`)
+
+* On Windows run this command to link nvim configuration to a folder where it is expected on
++
+
+Windows (with Git Bash):
+`ln -s $XDG_CONFIG_HOME/nvim ~/AppData/Local/nvim`
++
+
+If this doesn't work try running `cmd` as admin and run:
+`mklink /D %HOMEDRIVE%%HOMEPATH%\AppData\Local\nvim %HOMEDRIVE%%HOMEPATH%\.config\nvim`
+
+* Install https://github.com/junegunn/vim-plug#windows-powershell-1[vim-plug] with PowerShell:
++
+
+[source,powershell]
+----
+iwr -useb https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim |`
+    ni "$(@($env:XDG_DATA_HOME, $env:LOCALAPPDATA)[$null -eq $env:XDG_DATA_HOME])/nvim-data/site/autoload/plug.vim" -Force
+----
+
+* Now run `C:\Neovim\bin\nvim-qt.exe`. If window goes black, just wait, it is installing...
+
+
+== Use Neovim as `Git Bash` editor
+
+* Add `nvim` to path - open `cmd` as administrator and execute:
+`setx /M path "%path%;C:\Neovim\bin\\"`
+
+* Set `nvim` as git editor - open `Git Bash` and execute: `git config --global core.editor nvim-qt`
+
+
+== VSCode / VSCodium
+
+* https://github.com/VSCodium/vscodium[VSCodium repo]
+
+To make VSCodium behave like Neovim I copied stuff from https://github.com/ChristianChiarulli/nvim[this repo].
+In https://youtu.be/g4dXZ0RQWdw[this video] author of repo explains his setup.
+Also check his https://www.chrisatmachine.com/Neovim/22-vscodium-neovim/[blog post].
+
+
+. You need to change `init.vim` to point to your `vscode/settings.vim` from this repository.
++
+So you need to change this line `source C:\.config\nvim\vscode\settings.vim`.
+
+* `init.vim` location:
+** Windows: `~\AppData\Local\nvim\init.vim` or `C:\.config\nvim\init.vim`.
+** Linux: `~/.config/nvim/init.vim`.
+
+. Also so you need to change this two files in your VSCode/VSCodium:
+
+* `keybindings.json`: press `CTRL+SHIFT+P` and type
+`Open Keyboard Shortcuts (JSON)` and paste link:utils/vscodium_config/keybindings.json[keybindings]
+
+* `settings.json`: press `CTRL+SHIFT+P` and type
+`Open Settings (JSON)` and paste link:utils/vscodium_config/settings.json[settings].
++
+
+In this file you need to change:
+
+** `neovimExecutablePaths`: path to your `neovim` executable
+** `neovimInitVimPaths`: `init.vim` config
+
+
+In order to properly function you must to install this extensions:
+
+* `Neo Vim`
+* `Which Key`
+* `vscode-viml-syntax` (this is not necessary but helps with editing `.vim` files)
+
+link:utils/vscodium_config/VSCodiumSetup.adoc[VSCode/VSCodium setup]
+
+
+== Shortcuts
+
+* `CTRL + h/j/k/l` - move between open windows, explorer, terminal...
+
+
+=== Explorer
+* `SPACE + e` - toggle explorer
+* `a` - create new file
+* `A` - create new folder
+* `r` - rename selected file
+* `l` - open selected file
+
+
+=== Editor
+* `CTRL + j/k` - move between suggestions
+* `SPACE + n` - remove highlights from searching
+* `SPACE + M` - toggle minimap
+* `SPACE + t` - toggle terminal
+* `SPACE + f` - search + select where to search (note that with `CTRL + ALT + ENTER` you replace all
+occurrences)
+
+
+== TODO
+
+* [ ] jump to definition
+* [ ] resize windows (tiling window manager style)
+* [ ] `SHIFT + k` - show hover/IntelliSense
