@@ -12,6 +12,7 @@ Note that this should be already set by `settings.vim`:
 
 ## Extensions
 
+- `AsciiDoc`: Provides rich language support for AsciiDoc
 - `Code Spell Checker`: spell checker
 - `Color Picker`: Helper with GUI to generate color codes such as SDD color notations.
 - `GitLens - Git supercharged`: `git` stuff
