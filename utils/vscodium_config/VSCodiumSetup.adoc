@@ -11,6 +11,9 @@ Note that this should be already set by `settings.vim`:
 * Use `.gitattributes` in your projects
 * Some explanation for stuff above - https://github.com/bzgec/notes_programming/tree/user/bzgec/git#eof-best-practices--best-practices-for-cross-platform-git-config[link]
 
+== Installation
+You can run link:setup.sh[] to install all extensions and copy link:settings.json[] and
+link:keybindings.json[].
 
 == Extensions
 
