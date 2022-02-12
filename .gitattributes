@@ -16,6 +16,8 @@
 *.csv             text eol=lf
 *.json            text eol=lf
 *.vim             text eol=lf
+*.adoc            text eol=lf
+*.rst             text eol=lf
 *.html            text eol=lf
 *.css             text eol=lf
 *.js              text eol=lf
