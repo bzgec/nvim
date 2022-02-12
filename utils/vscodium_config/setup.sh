@@ -13,6 +13,7 @@ extensionsArr=(
     "medo64.render-crlf"
     "dunstontc.viml"
     "VSpaceCode.whichkey"
+    "EditorConfig.EditorConfig"
 )
 
 # Install extensions

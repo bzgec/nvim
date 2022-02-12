@@ -27,6 +27,7 @@ link:keybindings.json[].
 * `Render Line Endings`: show line endings `LF`/`CRLF`
 * `Which Key`: for making _VSCodium_ kind of like _Neo Vim_
 * `vscode-viml-syntax`: Syntax highlighting for `.vim` files.
+* `EditorConfig`: helps maintain consistent coding styles for multiple developers
 
 
 === Not yet implemented in VSCodium or something else
